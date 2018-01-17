@@ -19,7 +19,7 @@ function handle(req,res) {
     res.end(github_fetch())
   }
   else if (path === "/lab/better-github-cards/front-end.js") {
-    res.writeHead(200,{"Content-Type":"text/javascript"})
+    res.writeHead(200,{"Content-Type":"text/javscript","Access-Control-Allow-Origin":"*"})
     res.end(fs.readFileSync("frontend.js"))
   }
 }

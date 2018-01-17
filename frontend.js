@@ -24,8 +24,7 @@ function process_card(card) {
 function ghInject(card,user,theme) {
   console.log("Injecting...")
 	$.ajax("http://localhost:2000/get?user=" + user).done(function(card_html) {
-    console.log("Done")
-    console.log(card_html);
     $(card).html(card_html)
+    $(card).show();
   });
 }
