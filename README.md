@@ -9,6 +9,7 @@ These cards are designed to be as customizable as possible, though there are sev
 A basic card would look like this:
 ```
 <div class="better-github-card better-github-card-<your username here>">
+  <div class="bgh-user">your_username</div>
   <div class="bgh-config">default</div>
 </div>
 <script src="lab.jacksonlewis.me/better-github-cards/front-end.js">
@@ -17,6 +18,7 @@ A basic card would look like this:
 You can change the value of the `bgh-config` div to another theme:
 ```
 <div class="better-github-card better-github-card-<your username here>">
+  <div class="bgh-user">your_username</div>
   <div class="bgh-config">modern</div>
 </div>
 <script src="lab.jacksonlewis.me/better-github-cards/front-end.js">
@@ -25,6 +27,7 @@ You can change the value of the `bgh-config` div to another theme:
 Or even have your own custom-made theme with data injection:
 ```
 <div class="better-github-card better-github-card-<your username here>">
+  <div class="bgh-user">your_username</div>
   <div class="bgh-config bgh-config-custom">
     <p> My github username is: <span class="bgh-inject-username"></span></p>
     <p> I have these many followers: <span class="bgh-inject-followers"></span></p>
